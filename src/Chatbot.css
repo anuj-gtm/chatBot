@@ -1,0 +1,97 @@
+body { /* Or a suitable parent container */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    min-height: 100vh;      /* Ensures full viewport height */
+    margin: 0;             /* Remove default body margins */
+    background-color: #011627;
+}
+.body1{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+.chatbot-container {
+
+    width: 400px;
+    margin: 50px auto;
+    border: 2px solid #020813;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 700px; /* Set a fixed height */
+  }
+  
+  .chat-header {
+    background-color: #04111f; /* Example color */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+  }
+  
+  .chat-messages {
+    flex-grow: 1; /* Allows messages to take up available space */
+    padding: 5px;
+    overflow-y: auto; /* Enables scrolling */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    max-width: 80%;
+    clear: both; /* Prevents message overlap */
+    word-wrap: break-word; /* prevent long words from overflowing */
+  }
+  
+  .user-message {
+    background-color: #263135; /* Example user message color */
+    align-self: flex-end; /* Align user messages to the right */
+    float: right;
+  }
+  
+  .bot-message {
+    background-color: #263135; /* Example bot message color */
+    align-self: flex-start; /* Align bot messages to the left */
+    float: left;
+  }
+  
+  .chat-input {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    display: flex;
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  .chat-input button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .scrollable-cont{
+    margin-left: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
