@@ -4,7 +4,7 @@ body { /* Or a suitable parent container */
     align-items: center;     /* Centers vertically */
     min-height: 100vh;      /* Ensures full viewport height */
     margin: 0;             /* Remove default body margins */
-    background-color: #011627;
+    background-color: #2c3438;
 }
 .body1{
     display: flex;
@@ -12,7 +12,7 @@ body { /* Or a suitable parent container */
 
 a{
     text-decoration: none;
-    color: white;
+    color: rgba(158, 158, 158, 0.921);
 
 }
 
@@ -21,7 +21,7 @@ a{
 
     width: 400px;
     margin: 50px auto;
-    border: 2px solid #020813;
+    border: 2px solid #000000;
     border-radius: 5px;
     overflow: hidden;
     display: flex;
@@ -30,12 +30,17 @@ a{
   }
   
   .chat-header {
-    background-color: #04111f; /* Example color */
-    color: white;
+    background-color: #080f13; /* Example color */
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     text-align: center;
     height: 50px;
+    
   }
+
   
   .chat-messages {
     flex-grow: 1; /* Allows messages to take up available space */
@@ -55,20 +60,20 @@ a{
   }
   
   .user-message {
-    background-color: #263135; /* Example user message color */
+    background-color: #3a413e; /* Example user message color */
     align-self: flex-end; /* Align user messages to the right */
     float: right;
   }
   
   .bot-message {
-    background-color: #263135; /* Example bot message color */
+    background-color: #080f13; /* Example bot message color */
     align-self: flex-start; /* Align bot messages to the left */
     float: left;
   }
   
   .chat-input {
     padding: 10px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #2c3438;
     display: flex;
   }
   
@@ -82,7 +87,7 @@ a{
   
   .chat-input button {
     padding: 8px 15px;
-    background-color: #007bff;
+    background-color: #006aff;
     color: white;
     border: none;
     border-radius: 5px;
